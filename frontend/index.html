@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#087f68">
+<title>JeevanSetu | Healthcare beyond boundaries</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="JeevanSetu home"><span class="brandmark">✚</span><span>JeevanSetu<small>Healthcare beyond boundaries</small></span></a>
+  <nav class="topnav"><a href="#services">Services</a><a href="#hospitals">Hospitals</a><a href="#wellness">Wellness</a></nav>
+  <div class="top-actions"><select id="language" aria-label="Choose language"><option value="en">English</option><option value="te">తెలుగు</option><option value="ta">தமிழ்</option><option value="kn">ಕನ್ನಡ</option><option value="ml">മലയാളം</option><option value="bn">বাংলা</option></select><button class="menu-btn" id="menuBtn">☰</button></div>
+</header>
+<div class="notice"><strong>Prototype notice:</strong> Sample hospitals, scheme guidance and drone movements are demonstrations only. For a life-threatening emergency in India, call <a href="tel:112">112</a> immediately.</div>
+<main>
+<section class="hero">
+ <div class="hero-copy"><span class="eyebrow">RURAL HEALTHCARE • SENIOR CARE • CONNECTED RESPONSE</span><h1 id="heroTitle">Healthcare should reach <em>everyone, everywhere.</em></h1><p>Connect with nearby hospitals, find potential healthcare benefits, manage wellness and follow hospital-approved delivery requests.</p>
+ <div class="hero-buttons"><button class="btn btn-red" id="heroSOS">● Emergency help</button><button class="btn btn-light" data-view="patient">Open patient dashboard →</button></div>
+ <div class="trust-row"><span>✓ Regional languages</span><span>✓ Senior-friendly</span><span>✓ Hospital-led response</span></div></div>
+ <div class="hero-art"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="health-card"><div class="pulse">✚</div><h3>Care, connected.</h3><p>Patient <span>↔</span> Hospital <span>↔</span> Care team</p><div class="mini-stats"><div><b>24/7</b><small>Emergency access</small></div><div><b>6</b><small>Languages</small></div></div></div><div class="floating f1">🏥 Nearby care</div><div class="floating f2">🚁 Delivery tracking</div></div>
+</section>
+<section class="quickbar" id="services">
+ <button class="quick q-red" id="quickSOS"><span>＋</span><b>Emergency SOS</b><small>Call for urgent help</small></button>
+ <button class="quick" data-view="hospitals"><span>🏥</span><b>Find hospitals</b><small>Nearby care options</small></button>
+ <button class="quick" data-view="schemes"><span>₹</span><b>Scheme checker</b><small>Explore cost support</small></button>
+ <button class="quick" data-view="delivery"><span>🚁</span><b>Medicine delivery</b><small>Hospital-authorised only</small></button>
+ <button class="quick" data-view="wellness"><span>🧘</span><b>Yoga & diet</b><small>Personal wellness plan</small></button>
+</section>
+<div class="layout">
+<aside class="sidebar">
+ <div class="side-label">WORKSPACE</div>
+ <button class="side-link active" data-view="overview">▦ <span>Overview</span></button>
+ <button class="side-link" data-view="patient">♙ <span>Patient dashboard</span></button>
+ <button class="side-link" data-view="hospitals">＋ <span>Hospitals & emergency</span></button>
+ <button class="side-link" data-view="delivery">↗ <span>Drone & delivery</span></button>
+ <button class="side-link" data-view="schemes">₹ <span>Government schemes</span></button>
+ <button class="side-link" data-view="wellness">♡ <span>Yoga & diet planner</span></button>
+ <button class="side-link" data-view="reports">▤ <span>Health reports</span></button>
+ <div class="side-label gap-top">ROLE DASHBOARDS</div>
+ <button class="side-link" data-view="hospitalAdmin">▣ <span>Hospital dashboard</span></button>
+ <button class="side-link" data-view="doctor">⚕ <span>Doctor dashboard</span></button>
+ <button class="side-link" data-view="droneAdmin">🚁 <span>Drone operator</span></button>
+ <button class="side-link" data-view="admin">⚙ <span>Platform admin</span></button>
+ <div class="sidebar-help"><span>💚</span><b>Need assistance?</b><small>Ask a family member or call emergency services when needed.</small><a href="tel:112">Call 112 →</a></div>
+</aside>
+<section class="content" id="content" aria-live="polite"></section>
+</div>
+<section class="bottom-cta"><div><span class="eyebrow">CARE WITHOUT DISTANCE</span><h2>One platform. A connected care network.</h2><p>Built around patient dignity, clinical oversight and accountable hospital coordination.</p></div><button class="btn btn-primary" data-view="patient">Get started →</button></section>
+</main>
+<footer><div class="brand"><span class="brandmark">✚</span><span>JeevanSetu<small>Healthcare beyond boundaries</small></span></div><p>© 2026 JeevanSetu Prototype. Not an emergency service or medical provider.</p><div><a href="#services">Services</a> · <a href="https://pmjay.gov.in/" target="_blank" rel="noopener">PM-JAY official portal</a> · <a href="https://112.gov.in/" target="_blank" rel="noopener">112 India</a></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop" id="modal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-x" id="modalClose">×</button><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body></html>
